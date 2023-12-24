@@ -1,0 +1,54 @@
+*{
+    padding:0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+
+.navbar-nav .nav-link {
+    font-size: 20px; /* Increase the font size of the navigation links */
+    
+  }
+
+.logo{
+    height: 75px;
+    margin-left: 5px
+}
+
+.bg-header{
+    background-color: #2e60bd83;
+}
+
+.header{
+    min-height: 100vh;
+    background-image:  linear-gradient(rgba(20, 20, 53, 0.656) 26%, rgba(0, 213, 255, 0.433) 100%), url('../img/Background1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.gallery{
+    min-height: 100vh;
+    
+}
+
+.card1{
+    background-color: rgba(35, 89, 130, 0.388);
+    
+}
+
+.bg-footer{
+    background-color: rgb(6, 127, 127);
+}
+
+.about_us {
+    min-height: 100vh;
+    background-image:  linear-gradient(rgba(20, 20, 53, 0.656) 26%, rgba(0, 213, 255, 0.433) 100%), url('../img/BackGround2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-bottom: 25px;
+}
+
+
+
