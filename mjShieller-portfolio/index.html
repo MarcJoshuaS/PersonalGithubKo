@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-kJ1iFqw5lMcJqV5NVuY+nTzJvz/NgNt1oNfD1PIGh8eO6GuPQe3fN/hGtzI3lK1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./resources/css/Styles.css">
+
+    <title>Shieller's Portfolio</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light navbar-style">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link active text-light" href="#">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link text-light" href="#about-me">About Me</a>
+            <a class="nav-link text-light" href="#projects">Projects</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid header-container">
+    <div class="row">
+        <div class="col-md-6 name">
+          <section id="home-introduction">
+            <h6 class="helloworld">Hello world</h6>
+            <h1 class="nameko">Hello I'm M.J.S</h1>
+        </section>
+        </div>
+
+        <div class="col-md-6 header-div-2">
+            <img src="./resources/img/portfolioimg.jpg" alt="Picko" class="mypic">
+
+            <div class="social-icon">
+                <a href="https://www.facebook.com/joshua.shieller/" target="_blank">
+                    <img src="./resources/img/facebook.png" alt="facebook" class="fbicon">
+                </a>
+                <a href="https://www.instagram.com/mrcjsh.s/?hl=en" target="_blank">
+                    <img src="./resources/img/instagram.png" alt="instagram" class="instaicon">
+                </a>
+                <img src="./resources/img/gmail-logo.png" alt="gmail" class="gmailicon" onclick="showMessage()">
+                <div id="messageBox">shieller2121116@mkt.ceu.edu.ph</div>
+            </div>
+        </div>
+        <!-- Add other columns if needed -->
+    </div>
+</div>
+
+<!-- about me section -->
+<div class="container-fluid aboutMe-container" >
+  <!-- Section About Me with Image -->
+  <section class="aboutmetxt animation-left" id="about-me">
+      <h2>About Me</h2>
+      <!-- Replace 'path/to/your/image.jpg' with the actual path to your image -->
+
+      <div class="about-text">
+          <h3 class="SBme-heading">Short background of me</h3>
+          <img src="./resources/img/giftest.gif" alt="Animated GIF" class="gif">
+          <p>
+              <strong class="eductxt">College:</strong> School name (2021-Present)<br>
+              <strong class="eductxt">Senior High School:</strong> School name (2019-2021)<br>
+              <strong class="eductxt">Junior High School:</strong> School name (2015-2019)<br>
+              <strong class="eductxt">Elementary:</strong> School name (2015-2010)
+          </p>
+
+          <h3 class="likes-heading">Likes</h3>
+          <ul>
+              <li class="likes">Sleep 🛏️</li>
+              <li class="likes">Eat 🥣</li>
+              <li class="likes">Exercise 🏋🏻‍♂️</li>
+              <li class="likes">Play with friends 🎮</li>
+              <li class="likes">Cold Coffee 🧊 ☕</li>
+          </ul>
+
+          <h3 class="dislikes-heading">Dislikes</h3>
+          <ul>
+              <li class="dislikes">Eating vegetables 🥬</li>
+              <li class="dislikes">Programming 😵‍💫</li>
+              <li class="dislikes">Being swayed by emotion 💢</li>
+              <li class="dislikes">Hot coffee ♨️ ☕</li>
+          </ul>
+      </div>
+  </section>
+</div>
+
+<div class="container-fluid projects-container">
+  <section class="cards-class" id="projects">
+      <h2 class="projecttxt">Projects</h2>
+      
+      <!-- Repeat the following block for each project -->
+ <!-- Repeat the following block for each project -->
+<div class="card" onmouseover="showTitle(this)" onmouseout="showDescription(this)">
+  <a href="https://www.port-twentyfive.xyz/MJShieller/api/api.php">
+      <div class="image-container">
+          <img src="./resources/img/1OOP.png" alt="Project 1 Image" class="card-image">
+          <div class="overlay"></div>
+      </div>
+  </a>
+  <div class="content">
+      <p class="titletxt"><b>API TABLE</b></p><br> 
+      <p class="desctxt">This webpage showcases API data in a table format. Using JavaScript, it fetches JSON data from an API and dynamically populates a clean and organized table.</p>
+  </div>
+</div>
+
+<div class="card" onmouseover="showTitle(this)" onmouseout="showDescription(this)">
+  <a href="https://www.port-twentyfive.xyz/MJShieller/ConsonantOnly/Question2.php">
+      <div class="image-container">
+          <img src="./resources/img/2consonantFilter.png" alt="Project 2 Image" class="card-image">
+          <div class="overlay"></div>
+      </div>
+  </a>
+  <div class="content">
+      <p class="titletxt"><b>Consonant Filtering</b></p><br>
+      <p class="desctxt">This showcases simple consonant filtering.</p>
+  </div>
+</div>
+
+<div class="card" onmouseover="showTitle(this)" onmouseout="showDescription(this)">
+  <a href="https://www.port-twentyfive.xyz/MJShieller/EvenNumberOnly/Question1">
+      <div class="image-container">
+          <img src="./resources/img/3evenNumberFilter.png" alt="Project 3 Image" class="card-image">
+          <div class="overlay"></div>
+      </div>
+  </a>
+  <div class="content">
+      <p class="titletxt"><b>Even Number Filtering</b></p><br>
+      <p class="desctxt">This showcases simple even number filtering.</p>
+  </div>
+</div>
+
+<div class="card" onmouseover="showTitle(this)" onmouseout="showDescription(this)">
+  <a href="https://www.port-twentyfive.xyz/MJShieller/Lesson1-main/index.html">
+      <div class="image-container">
+          <img src="./resources/img/4WinterSale.png" alt="Project 4 Image" class="card-image">
+          <div class="overlay"></div>
+      </div>
+  </a>
+  <div class="content">
+      <p class="titletxt"><b>Winter Sale</b></p><br>
+      <p class="desctxt">This is an example showcasing a simple winter clothes sale (static).</p>
+  </div>
+</div>
+
+<div class="card" onmouseover="showTitle(this)" onmouseout="showDescription(this)">
+  <a href="https://www.port-twentyfive.xyz/MJShieller/NumbersToNumberWord/Question4.php">
+      <div class="image-container">
+          <img src="./resources/img/5numbersTowords.png" alt="Project 5 Image" class="card-image">
+          <div class="overlay"></div>
+      </div>
+  </a>
+  <div class="content">
+      <p class="titletxt"><b>Numbers to Words</b></p><br>
+      <p class="desctxt">This showcases simple a number converting it into words.</p>
+  </div>
+</div>
+
+<div class="card" onmouseover="showTitle(this)" onmouseout="showDescription(this)">
+  <a href="https://www.port-twentyfive.xyz/MJShieller/SendEmailActivity/Question3.php">
+      <div class="image-container">
+          <img src="./resources/img/6sendemail.png" alt="Project 6 Image" class="card-image">
+          <div class="overlay"></div>
+      </div>
+  </a>
+  <div class="content">
+      <p class="titletxt"><b>Emailing</b></p><br>
+      <p class="desctxt">This showcases simple emailing to the static email used.</p>
+  </div>
+</div>
+
+<div class="card" onmouseover="showTitle(this)" onmouseout="showDescription(this)">
+  <a href="https://www.port-twentyfive.xyz/MJShieller/todolist/index.php">
+      <div class="image-container">
+          <img src="./resources/img/7todolist.png" alt="Project 7 Image" class="card-image">
+          <div class="overlay"></div>
+      </div>
+  </a>
+  <div class="content">
+      <p class="titletxt"><b>To do List</b></p><br>
+      <p class="desctxt">This simple To do list showcase a simple CRUD functionality.</p>
+  </div>
+</div>
+
+<div class="card" onmouseover="showTitle(this)" onmouseout="showDescription(this)">
+  <a href="https://www.port-twentyfive.xyz/MJShielle/Bauan University/index.html">
+      <div class="image-container">
+          <img src="./resources/img/University of Bauan.png" alt="Project 7 Image" class="card-image">
+          <div class="overlay"></div>
+      </div>
+  </a>
+  <div class="content">
+      <p class="titletxt"><b>University of Bauan</b></p><br>
+      <p class="desctxt">This showcases a sample and simple University website (static).</p>
+  </div>
+</div>
+
+  </section>
+</div>
+
+<div class="footer" id="footer">
+    <p>&copy; Copyright 2023 M.J.S. All Rights Reserved.</p>
+    <p>Design and Code by Marc Joshua Shieller</p>
+</div>
+
+<script src="./js/portfolio.js"></script>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>
